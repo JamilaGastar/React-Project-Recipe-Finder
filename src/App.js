@@ -1,10 +1,28 @@
 import React from 'react'
-import recipeContainer from './recipeContainer'
+import RecipeContainer from "./RecipeContainer"
+// import {
+//   BrowserRouter as Router,
+//   Route
+// } from 'react-router-dom';
+// import NavBar from './NavBar';
+// import Breakfast from './Breakfast';
+// import Lunch from './Lunch';
+// import Dinner from './Dinner';
 
-const App = () => {
+const App = (props) => {
     return (
       <div>
-          <recipeContainer/>
+        {/* <Router> */}
+        
+         <div>
+          {/* <NavBar/> */}
+          {/* <Route exact path="/" component={RecipeContainer}/>
+          <Route path="/breakfast" component={Breakfast} />
+          <Route path="/lunch" component={Lunch}/>
+          <Route path="/dinner" component={Dinner}/> */}
+         </div>
+        {/* </Router> */}
+        <RecipeContainer/>
       </div>
     )
   }
@@ -12,10 +30,6 @@ const App = () => {
 
 export default App
 
-// class App extends React.Component {
-  // constructor() {
-  //   super();
-  //     this.API_KEY = "59b7d664460d80528e52d60e25858ed9"
-  //   }
+
   
 

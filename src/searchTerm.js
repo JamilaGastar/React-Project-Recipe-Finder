@@ -1,6 +1,6 @@
 import React from 'react';
 
-class searchTerm extends React.Component {
+class SearchTerm extends React.Component {
     constructor() {
         super()
             this.state = {
@@ -24,6 +24,7 @@ class searchTerm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <input
                     type="text"
+                    placeholder="don't get hangry, search me"
                     onChange={this.handleSearchTermChange}
                     value={this.state.searchTerm}
                 />
@@ -33,4 +34,4 @@ class searchTerm extends React.Component {
     }
 }
 
-export default searchTerm;
+export default SearchTerm;
