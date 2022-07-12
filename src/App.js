@@ -1,19 +1,18 @@
 import React from 'react'
 import RecipeContainer from "./RecipeContainer"
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
-import NavBar from './NavBar';
-import Breakfast from './Breakfast';
-import Lunch from './Lunch';
-import Dinner from './Dinner';
+// import {
+//   BrowserRouter as Router,
+//   Route
+// } from 'react-router-dom';
+// import NavBar from './NavBar';
+// import Breakfast from './Breakfast';
+// import Lunch from './Lunch';
+// import Dinner from './Dinner';
 
 const App = (props) => {
     return (
       <div>
-        <Router>
-
+        {/* <Router>
          <div>
           <NavBar/> 
           <Route exact path="/" component={RecipeContainer}/>
@@ -21,8 +20,8 @@ const App = (props) => {
           <Route path="/lunch" component={Lunch}/>
           <Route path="/dinner" component={Dinner}/>
          </div>
-        </Router>
-        {/* <RecipeContainer/> */}
+        </Router> */}
+        <RecipeContainer/>
       </div>
     )
   }

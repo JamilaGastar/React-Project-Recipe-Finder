@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: rgb(30, 28, 28);
+  background: rgb(73, 54, 54);
   color: rgb(255, 224, 157);
 }
 
@@ -28,7 +28,33 @@ input {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 60%;
+  height: 60%;
   padding: 10px;
 }
+
+a:link {
+  text-decoration: none;
+  color: rgb(30, 20, 20);
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(30, 20, 20);
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(204, 193, 193);
+}
+
+div {
+  margin: 10px;
+  padding: 10px;
+}
+
+
