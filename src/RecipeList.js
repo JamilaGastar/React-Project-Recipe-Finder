@@ -7,7 +7,6 @@ class RecipeList extends React.Component {
     };
 
     render() {
-        // console.log(this.props.recipes)
         return (
             <div>
            {this.props.recipes.hits.map((element) => this.renderImages(element))}
@@ -15,7 +14,5 @@ class RecipeList extends React.Component {
         );
     }
 }
-
-
 
 export default RecipeList;

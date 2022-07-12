@@ -1,19 +1,20 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
+
 const Navbar= () =>{
   return (
   <div>
     <li>
-      <Link to="/">Dogs</Link>
+      <Link to="/">Home</Link>
     </li>
     <li>
-      <Link to="/cats">Cats</Link>
+      <Link to="/breakfast">Breakfast</Link>
     </li>
     <li>
-      <Link to="/sheeps">Sheeps</Link>
+      <Link to="/lunch">Lunch</Link>
     </li>
     <li>
-      <Link to="/goats">Goats</Link>
+      <Link to="/dinner">Dinner</Link>
     </li>
   </div>
   );
