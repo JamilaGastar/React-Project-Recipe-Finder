@@ -1,6 +1,6 @@
 import React from 'react'
-import SearchTerm from './SearchTerm';
-import RecipeList from './RecipeList';
+import SearchTerm from '../components/SearchTerm';
+import RecipeList from '../components/RecipeList';
 
 class RecipeContainer extends React.Component {
     constructor() {
@@ -21,21 +21,10 @@ class RecipeContainer extends React.Component {
         this.setState({
             recipes: data
         }, 
-        () => console.log(this.state.recipes)
+        // () => console.log(this.state.recipes)
         );
     }
 
-    //below is recipe names//
-    //this.state.recipes.hits.map((Element) => console.log(Element.recipe.label))//
-
-    //below is recipe images//
-    //this.state.recipes.hits.map((Element) => console.log(Element.recipe.image)))//
-
-    //below is recipe url link to method//
-    //this.state.recipes.hits.map((Element) => console.log(Element.recipe.url)//
-
-    //below is recipe meal type//
-    //this.state.recipes.hits.map((Element) => console.log(Element.recipe.mealType[0]))//
 
     render() {
         return (
@@ -44,7 +33,7 @@ class RecipeContainer extends React.Component {
                 <h2>RECIPE FINDER</h2>
                 <p>Created by a hungry, impatient girl bringing recipes to you at your convenience.</p>
                     <p>Whether you're bored and wanting inspiration, in the mood for a specific ingredient but not sure what to cook, or know what you want but are looking for a recipe to follow, we've got you covered.</p>
-                    <p>Type in the key word(s) of what you're looking for and 20 recipe options will generate.</p>
+                    <p>Type in the key word(s) of what you're looking for and 20 recipe options will generate, otherwise click based on meal type above!</p>
                 <br/>
                 <SearchTerm performSearch={this.performSearch}/>
                 <br/>

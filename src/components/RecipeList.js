@@ -5,8 +5,8 @@ class RecipeList extends React.Component {
     render() {
         // console.log(this.props.recipes)
         return (
-            <div className='recipeContainer' style={{backgroundColor: 'rgb(89, 69, 69, 0.9)' }}>
-                <div>
+            <div className='recipeContainer' style={{backgroundColor: 'rgb(89, 69, 69, 0.9)'}} >
+                <div style={{columnCount: "2"}}>
                     {this.props.recipes.hits.map((element) => {
                     return (
                         <div>

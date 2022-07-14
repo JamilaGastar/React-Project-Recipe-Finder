@@ -28,7 +28,7 @@ class SearchTerm extends React.Component {
                     onChange={this.handleSearchTermChange}
                     value={this.state.searchTerm}
                 />
-                <input type="submit"/>
+                <input type="submit" results="0"/>
             </form>
         );
     }
