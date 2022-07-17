@@ -59,3 +59,15 @@ div {
 div.recipeContainer {
   min-width: 950px;
 }
+
+div.breakfastRecipeContrainer {
+  min-width: 950px;
+}
+
+div.lunchRecipeContainer {
+  min-width: 950px
+}
+
+div.dinnerRecipeContainer {
+  min-width: 950px;
+}

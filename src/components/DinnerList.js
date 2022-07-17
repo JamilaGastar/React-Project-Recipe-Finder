@@ -1,13 +1,13 @@
 import React from 'react';
 
-class BreakfastList extends React.Component {
+class DinnerList extends React.Component {
 
     render() {
-        // console.log(this.props.breakfastRecipes)
+        // console.log(this.props.lunchRecipes)
         return (
-            <div className='breakfastRecipeContainer' style={{backgroundColor: 'rgb(89, 69, 69, 0.9)'}} >
+            <div className='dinnerRecipeContainer' style={{backgroundColor: 'rgb(89, 69, 69, 0.9)'}} >
                 <div style={{columnCount: "2"}}>
-                    {this.props.breakfastRecipes.hits.map((element) => {
+                    {this.props.dinnerRecipes.hits.map((element) => {
                     return (
                         <div>
                         <img src={element.recipe.image} alt=""/>
@@ -22,4 +22,5 @@ class BreakfastList extends React.Component {
     }
 }
 
-export default BreakfastList;
+
+export default DinnerList;

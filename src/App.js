@@ -5,7 +5,9 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import RecipeContainer from './containers/RecipeContainer';
-// import BreakFastContainer from './containers/BreakFastContainer';
+// import BreakfastContainer from './containers/BreakfastContainer';
+// import LunchContainer from './containers/LunchContainer';
+// import DinnerContainer from './containers/DinnerContainer';
 
 
 const App = (props) => {
@@ -14,9 +16,13 @@ const App = (props) => {
          <div>
             <Navbar/> 
             {/* <Route exact path="/" component={RecipeContainer}/> */}
-          {/* <Route exact path="/breakfast" component={BreakFastContainer} /> */}
+          {/* <Route exact path="/breakfast" component={BreakfastContainer} />
+          // <Route exact path="/lunch" component={LunchContainer} />
+          // <Route exact path="/dinner" component={DinnerContainer} /> */}
           <RecipeContainer/> 
           {/* <BreakFastContainer/> */}
+          {/* <LunchContainer/> */}
+          {/* <DinnerContainer/> */}
          </div>
         </Router>
     );

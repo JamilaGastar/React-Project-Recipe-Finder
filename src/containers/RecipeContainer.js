@@ -31,7 +31,7 @@ class RecipeContainer extends React.Component {
             <div>
                 <h1>the hungry girl.</h1>
                 <h2>RECIPE FINDER</h2>
-                <p>Created by a hungry, impatient girl bringing recipes to you at your convenience.</p>
+                <p>Created by a hungry, time poor girl bringing recipes to you at your convenience.</p>
                     <p>Whether you're bored and wanting inspiration, in the mood for a specific ingredient but not sure what to cook, or know what you want but are looking for a recipe to follow, we've got you covered.</p>
                     <p>Type in the key word(s) of what you're looking for and 20 recipe options will generate, otherwise click based on meal type above!</p>
                 <br/>
