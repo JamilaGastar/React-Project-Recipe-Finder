@@ -1,24 +1,20 @@
 import React from 'react';
+import Dinner from './Dinner';
 
 class DinnerList extends React.Component {
 
     render() {
-        // console.log(this.props.lunchRecipes)
+        if (this.props.dinnerRecipes.hits) {
         return (
             <div className='dinnerRecipeContainer' style={{backgroundColor: 'rgb(89, 69, 69, 0.9)'}} >
                 <div style={{columnCount: "2"}}>
                     {this.props.dinnerRecipes.hits.map((element) => {
-                    return (
-                        <div>
-                        <img src={element.recipe.image} alt=""/>
-                        <h2>{element.recipe.label}</h2>
-                        <a href={element.recipe.url} target="popup">JUMP TO RECIPE</a> 
-                        </div>
-                        )
+                    return <Dinner recipe={element}/>
                     })}
                 </div>
             </div>
         );
+       } return <></>
     }
 }
 

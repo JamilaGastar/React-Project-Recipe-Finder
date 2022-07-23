@@ -16,20 +16,45 @@ code {
     monospace;
 }
 
+
+h1 {
+  font-size: 70px;
+}
+
+.text {
+  color: rgb(201, 161, 161);
+  font-size: 22px;
+}
+
 form {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 250px;
+  text-align: center;
 }
 
 input {
   width: 180px;
-  padding: 10px;
+  padding: 10px 35px 10px 15px;
   text-align: center;
   margin: 3px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
 }
 
-img {
-  width: 70%;
-  height: 70%;
+img.magnifyingGlassImg {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -40px;
 }
 
 a:link {
@@ -56,11 +81,16 @@ div {
   padding: 10px;
 }
 
+img {
+  width: 70%;
+  height: 70%;
+}
+
 div.recipeContainer {
   min-width: 950px;
 }
 
-div.breakfastRecipeContrainer {
+div.breakfastRecipeContainer {
   min-width: 950px;
 }
 

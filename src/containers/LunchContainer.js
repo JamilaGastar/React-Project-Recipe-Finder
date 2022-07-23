@@ -1,5 +1,6 @@
 import React from 'react';
 import LunchList from '../components/LunchList';
+import SearchValue from '../components/SearchValue';
 
 class LunchContainer extends React.Component {
     constructor(props) {
@@ -9,8 +10,8 @@ class LunchContainer extends React.Component {
         };
       }
     
-      componentDidMount() {
-        const lunchRecipesUrl = "https://api.edamam.com/api/recipes/v2?type=public&q=lunch&app_id=a81919ae&app_key=be49d2601919ceeda4a620dde73a2b45&imageSize=REGULAR"
+      performSearch = (searchValue) => {
+        const lunchRecipesUrl = `https://api.edamam.com/api/recipes/v2?type=public&q=${searchValue}&app_id=a81919ae&app_key=59b7d664460d80528e52d60e25858ed9&mealType=Lunch&imageSize=REGULAR`
             fetch(lunchRecipesUrl)
             .then(response => response.json())
             .then((data) => this.setLunchRecipesInState(data))
@@ -20,7 +21,6 @@ class LunchContainer extends React.Component {
           this.setState({
               lunchRecipes: data
           }, 
-          () => console.log(this.state.lunchRecipes.hits)
           );
       }
     
@@ -28,9 +28,10 @@ class LunchContainer extends React.Component {
         return (
           <div>
             <h1>the hungry girl.</h1>
-                <h2>RECIPE FINDER</h2>
-                    <h3>LUNCH RECIPES</h3>
-                    <LunchList lunchRecipes={this.state.lunchRecipes}/>
+            <h2>RECIPE FINDER</h2>
+            <h3>LUNCH RECIPES</h3>
+            <SearchValue performSearch={this.performSearch}/>
+            <LunchList lunchRecipes={this.state.lunchRecipes}/>
           </div>
         );
       }

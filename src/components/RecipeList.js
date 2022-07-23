@@ -14,8 +14,7 @@ class RecipeList extends React.Component {
                     </div>
                 </div>
             );
-        }
-        return <></>
+        } return <></>
     }
 }
 
