@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import RecipeContainer from './containers/RecipeContainer';
-import BreakfastContainer from './containers/BreakfastContainer';
+import BreakFastContainer from './containers/BreakFastContainer';
 import LunchContainer from './containers/LunchContainer';
 import DinnerContainer from './containers/DinnerContainer';
 
@@ -18,7 +18,7 @@ const App = (props) => {
           <Navbar/> 
           <Routes>
             <Route exact path="/" element={<RecipeContainer />}/>
-            <Route exact path="/breakfast" element={<BreakfastContainer/>} />
+            <Route exact path="/breakfast" element={<BreakFastContainer/>} />
             <Route exact path="/lunch" element={<LunchContainer/>} />
             <Route exact path="/dinner" element={<DinnerContainer/>} />
           </Routes>
